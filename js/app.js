@@ -178,11 +178,20 @@ function showCls(){
 }
 
 function showErro(){
+    let inp = document.getElementById('inputTerminal').value;
     let texto = document.getElementById('info');
-    texto.innerHTML = texto.innerHTML +
-        "perfilRamon@console: ~$ " + document.getElementById('inputTerminal').value +
-        "<br>'"+document.getElementById('inputTerminal').value+"' não é reconhecido como um comando interno\n" +
-        "ou externo, um programa operável ou um arquivo em lotes.<br><br>";
-    let objDiv = document.getElementById("terminal");
-    objDiv.scrollTop = objDiv.scrollHeight;
+    if (inp.indexOf('rs ') > -1){
+        texto.innerHTML = texto.innerHTML +
+            "perfilRamon@console: ~$ " + inp +
+            "<br>'"+inp+"' Argumento não encontrado verifique na lista!<br>" ;
+        showHelp();
+    }else{
+        texto.innerHTML = texto.innerHTML +
+            "perfilRamon@console: ~$ " + inp +
+            "<br>'"+inp+"' não é reconhecido como um comando interno<br>" +
+            "ou externo, um programa operável ou um arquivo em lotes.<br><br>";
+        let objDiv = document.getElementById("terminal");
+        objDiv.scrollTop = objDiv.scrollHeight;
+    }
+
 }
