@@ -181,7 +181,8 @@ function showErro(){
     let texto = document.getElementById('info');
     texto.innerHTML = texto.innerHTML +
         "perfilRamon@console: ~$ " + document.getElementById('inputTerminal').value +
-        "<br>Entrada invalida!<br><br>";
+        "<br>'"+document.getElementById('inputTerminal').value+"' não é reconhecido como um comando interno\n" +
+        "ou externo, um programa operável ou um arquivo em lotes.<br><br>";
     let objDiv = document.getElementById("terminal");
     objDiv.scrollTop = objDiv.scrollHeight;
 }
