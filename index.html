@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ramon Sousa</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/app.js"></script>
+</head>
+<body onload="focarInput()">
+
+    <div id="sideBar">
+        <div id="profileImage">
+            <img src="./img/ramon.jpg" alt="">
+        </div>
+        <h2>Ramon Sousa</h2>
+        <p>Programador/Desenvolvedor</p>
+        <div id="optionMenu">
+            <nav>
+                <ul>
+                    <li onclick="showInicio()">Inicio</li>
+                    <li onclick="showSobre()">Sobre</li>
+                    <li onclick="showLinks()">Links</li>
+                    <li onclick="showFormacao()">Formação</li>
+                    <li onclick="showExperiencia()">Expreriência</li>
+                    <li onclick="showTrabalho()">Trabalho</li>
+                    <li onclick="showContato()">Contato</li>
+                </ul>
+            </nav>
+        </div>
+
+    </div>
+    <div id="content">
+        <div id="topTerminal">
+            <p>perfilRamon@console: ~</p>
+        </div>
+        <div id="terminal">
+
+            <p id="info">
+                perfilRamon@console: ~$ rs -inicio <br>
+                Olá mundo! <br> Esta é uma pagina pessoa de apresentação com um formato um pouco diferente, vamos lá que vou lhe apresentar <br>
+                Pense nisto como um terminal logo pode interagir utilizando comandos, pode verificar os comandos a qualquer
+                <br> momento usando o comando: rs -help <br>
+                Todos os comandos são precedidos por rs, e o que você consegue interagir neste terminal são as sessões do menu ao lado
+                <br>
+                Ou seja use por exemplo rs -Sobre para acessar a aba sobre ou só click no menu o que achar mais divertido<br><br>
+            </p>
+            <p id="showImput">perfilRamon@console: ~$ <b id="userInput"></b> <span class="blink">_</span></p>
+        </div>
+    </div>
+
+    <form class="formOculto" action="javascript:sendResponse();" autocomplete="off">
+        <input onkeyup="attShowInput()" onblur="focarInput()" type="text" id="inputTerminal">
+    </form>
+
+</body>
+</html>
