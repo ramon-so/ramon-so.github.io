@@ -65,7 +65,7 @@ function showInicio(){
     let texto = document.getElementById('info');
     texto.innerHTML = texto.innerHTML +
         "perfilRamon@console: ~$ rs -inicio <br>" +
-        "Olá mundo! <br> Esta é uma pagina pessoa de apresentação com um formato um pouco diferente, vamos lá que vou lhe apresentar <br>" +
+        "Olá mundo! <br> Esta é uma pagina pessoal de apresentação com um formato um pouco diferente, vamos lá que vou lhe apresentar <br>" +
         "Pense nisto como um terminal logo pode interagir utilizando comandos, pode verificar os comandos a qualquer" +
         "<br> momento usando o comando: rs -help <br>" +
         "Todos os comandos são precedidos por rs, e o que você consegue interagir neste terminal são as sessões do menu ao lado" +
