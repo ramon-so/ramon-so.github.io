@@ -9,7 +9,7 @@
 <body onload="focarInput()">
 
     <div id="sideBar">
-        
+
         <div id="profileImage">
             <img src="./img/ramon.jpg" alt="">
         </div>
@@ -46,12 +46,13 @@
                 Ou seja use por exemplo rs -Sobre para acessar a aba sobre ou só click no menu o que achar mais divertido<br><br>
             </p>
             <p id="showImput">perfilRamon@console: ~$ <b id="userInput"></b> <span class="blink">_</span></p>
+            <form class="formOculto" action="javascript:sendResponse();" autocomplete="off">
+                <input onkeyup="attShowInput()" onblur="focarInput()" type="text" id="inputTerminal">
+            </form>
         </div>
     </div>
 
-    <form class="formOculto" action="javascript:sendResponse();" autocomplete="off">
-        <input onkeyup="attShowInput()" onblur="focarInput()" type="text" id="inputTerminal">
-    </form>
+    
 
 </body>
 </html>

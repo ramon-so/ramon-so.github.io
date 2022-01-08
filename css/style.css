@@ -10,6 +10,12 @@ body{
     font-family: sans-serif;
     color: white;
 }
+.formOculto input{
+    background-color: transparent;
+    border: none;
+    outline: 0;
+    color: transparent;
+}
 @media only screen and (min-width: 1000px) {
 #sideBar{
     width: 15%;
@@ -88,12 +94,7 @@ body{
 .blink {
     animation: blink 0.7s steps(1, start) infinite alternate;
 }
-.formOculto input{
-    background-color: transparent;
-    border: none;
-    outline: 0;
-    color: transparent;
-}
+
 @keyframes blink {
     50% { opacity: 1; }
     100% { opacity: 0; }
@@ -141,7 +142,6 @@ body{
     font-size: xx-large;
 }
 .formOculto input{
-    position: relative;
-    bottom: 0;
+    width: 100%;
 }
 }
