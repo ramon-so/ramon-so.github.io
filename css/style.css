@@ -10,7 +10,7 @@ body{
     font-family: sans-serif;
     color: white;
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 900px) {
 #sideBar{
     width: 15%;
     height: 100%;
@@ -103,7 +103,7 @@ body{
     font-weight: lighter;
 }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
 #sideBar{
     display: none!important;
 }
